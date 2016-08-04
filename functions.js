@@ -11,8 +11,8 @@
  *  variable names you will create as they will become input to _other_
  *  functions.
  */
-var a = 12;
-var b = 4;
+var a = 4;
+var b = 12;
 
 /**
  *  #2
@@ -65,7 +65,7 @@ multiply();
 
 var product = multiply(b, a);
 
-console.log(multiply);
+console.log(product);
 
 /**
  *  #5
@@ -78,7 +78,7 @@ console.log(multiply);
  */
 
 function checkDifference(X){
-	return "My football team lost " + X + " this week.";
+	return "My football team lost " + X + " times this week.";
 }
 
 checkDifference();
@@ -140,6 +140,14 @@ console.log(checkProduct);
  *      addThenSubtract(4, 5, 7); //-> returns 2 because 4 + 5 - 7 = 2
  */
 
+function addThenSubtract(n1, n2, n3){
+	return n1 + n2 - n3;
+}
+
+addThenSubtract();
+
+var addThenSubtract = addThenSubtract(product, difference, multiply);
+console.log(addThenSubtract);
 
 /**
  *  #9
