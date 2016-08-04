@@ -146,8 +146,8 @@ function addThenSubtract(n1, n2, n3){
 
 addThenSubtract();
 
-var addThenSubtract = addThenSubtract(product, difference, multiply);
-console.log(addThenSubtract);
+var result = addThenSubtract(product, difference, product);
+console.log(result);
 
 /**
  *  #9
@@ -160,6 +160,16 @@ console.log(addThenSubtract);
  *
  *  Store the return of this function to a variable named `howMany`
  */
+
+ function addThenMultiply(n1, n2, n3){
+ 	return n1 * n2 * n3;
+ }
+
+ addThenMultiply();
+
+ var total = addThenMultiply(product, difference, result);
+
+ console.log(total);
 
 
 /**
@@ -177,6 +187,17 @@ console.log(addThenSubtract);
  * Store the return value to a variable named `myFullName`
  */
 
+function createFullName(firstName, lastName){
+	param Datatype: String firstName = "Randy";
+    param Datatype: String lastName = "Salazar"
+    return Datatype: String
+}
+
+createFullName();
+
+var myFullName = firstName + lastName;
+
+console.log(myFullName);
 
 /**
  *  #11
