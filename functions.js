@@ -28,7 +28,8 @@ function add(n1, n2){
 
 add();
 
-console.log(add(a, b));
+var sum = add(a, b);
+console.log(sum);
 
 /**
  *  #3
@@ -38,6 +39,15 @@ console.log(add(a, b));
  *  Store this value in a variable named `difference`
  */
 
+function subtract(n1, n2){
+	return n1 - n2;
+}
+
+subtract();
+
+var difference = subtract(b, a);
+
+console.log(difference);
 
 /**
  *  #4
@@ -47,6 +57,15 @@ console.log(add(a, b));
  *  Store this value in a variable named `product`
  */
 
+function multiply(n1, n2){
+	return n1 * n2;
+}
+
+multiply();
+
+var multiply = multiply(b, a);
+
+console.log(multiply);
 
 /**
  *  #5
@@ -58,6 +77,15 @@ console.log(add(a, b));
  *  value stored in `difference`.
  */
 
+function checkDifference(X){
+	return "My football team lost " + X + " this week.";
+}
+
+checkDifference();
+
+var checkDifference = checkDifference(difference);
+
+console.log(checkDifference);
 
 /**
  *  #6
