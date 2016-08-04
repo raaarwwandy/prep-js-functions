@@ -11,7 +11,8 @@
  *  variable names you will create as they will become input to _other_
  *  functions.
  */
-
+var a = 12;
+var b = 4;
 
 /**
  *  #2
@@ -21,6 +22,13 @@
  *  Store this value in a variable named `sum`.
  */
 
+function add(n1, n2){
+	return n1 + n2;
+}
+
+add();
+
+console.log(add(a, b));
 
 /**
  *  #3
