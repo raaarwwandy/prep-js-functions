@@ -63,7 +63,7 @@ function multiply(n1, n2){
 
 multiply();
 
-var multiply = multiply(b, a);
+var product = multiply(b, a);
 
 console.log(multiply);
 
@@ -96,7 +96,15 @@ console.log(checkDifference);
  *  "I CAN ADDZ X NUMBERS"  where `X` is the value
  *  stored in the variable `sum`.
  */
+function checkSum(X){
+	return "I CAN ADDZ " + X + " NUMBERS!";
+}
 
+checkSum();
+
+var checkSum= checkSum(sum);
+
+console.log(checkSum);
 
 /**
  *  #7
@@ -106,6 +114,16 @@ console.log(checkDifference);
  *  multiplies it by the number stored at `difference` and
  *  then prints the result to the console.
  */
+
+function checkProduct(n1, n2){
+	return n1 * n2;
+}
+
+checkProduct();
+
+var checkProduct = multiply(product, difference);
+
+console.log(checkProduct);
 
 
 /**
