@@ -141,7 +141,7 @@ console.log(checkProduct);
  */
 
 function addThenSubtract(n1, n2, n3){
-	return n1 + n2 - n3;
+	return (n1 + n2) - n3;
 }
 
 addThenSubtract();
@@ -162,13 +162,12 @@ console.log(result);
  */
 
  function addThenMultiply(n1, n2, n3){
- 	return n1 * n2 * n3;
+ 	return (n1 + n2) - n3;
  }
 
  addThenMultiply();
 
- var total = addThenMultiply(product, difference, result);
-
+var total = addThenMultiply(product, difference, result);
  console.log(total);
 
 
@@ -188,14 +187,11 @@ console.log(result);
  */
 
 function createFullName(firstName, lastName){
-	param Datatype: String firstName = "Randy";
-    param Datatype: String lastName = "Salazar"
-    return Datatype: String
+	return firstName + ' ' + lastName;
 }
 
-createFullName();
 
-var myFullName = firstName + lastName;
+var myFullName = createFullName("Randy" + "Salazar");
 
 console.log(myFullName);
 
@@ -213,6 +209,21 @@ console.log(myFullName);
  *  **Call this function and pass in a number value.
  *  Store the return value to a variable named** `canDrinkBeer`
  */
+
+function verifyDrinkingAge (age){
+	if (age >= 21){
+		return "can drink"; 
+	} else {
+		return "can't drink";
+	}
+}
+
+verifyDrinkingAge();
+
+var canDrinkBeer = 13;
+var canDrinkBeer = 35;
+
+console.log(verifyDrinkingAge(canDrinkBeer));
 
 
 /**
