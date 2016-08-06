@@ -167,8 +167,8 @@ console.log(result);
 
  addThenMultiply();
 
-var total = addThenMultiply(product, difference, result);
- console.log(total);
+var howMany = addThenMultiply(product, difference, result);
+ console.log(howMany);
 
 
 /**
@@ -287,6 +287,19 @@ console.log(eatFood("Peter", "Boojangles", "California Burritos"));
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
 
+function repeater(num, legalAge){
+ for (var i = 0; i < num; i++){
+ 	if( legalAge === true){
+ 		console.log("Bacon Pancakes, makin' Bacon Pancakes...");
+ 	} else {
+ 		console.log("Let it go.... LET IT GOOOOOOoOoOoOo...");
+ 	}
+
+ }
+ 
+}
+
+repeater(howMany, canDrinkBeer);
 
 
 
