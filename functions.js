@@ -191,7 +191,7 @@ function createFullName(firstName, lastName){
 }
 
 
-var myFullName = createFullName("Randy" + "Salazar");
+var myFullName = createFullName("Randy", "Salazar");
 
 console.log(myFullName);
 
@@ -220,7 +220,6 @@ function verifyDrinkingAge (age){
 
 verifyDrinkingAge();
 
-var canDrinkBeer = 13;
 var canDrinkBeer = 35;
 
 console.log(verifyDrinkingAge(canDrinkBeer));
@@ -235,6 +234,18 @@ console.log(verifyDrinkingAge(canDrinkBeer));
  *  "The Party will have tons of Cake!" otherwise this message
  *  should be "This Party will have an open bar".
  */
+
+function throwParty (age){
+	if (age >=21){
+		return "This Party will have an open bar";
+	} else { 
+		return "This Party will have tons of cake";
+	}
+}
+
+throwParty();
+
+console.log(throwParty(canDrinkBeer));
 
 
 /**
@@ -257,7 +268,13 @@ console.log(verifyDrinkingAge(canDrinkBeer));
  *      "Peter Bojanglesloves loves to eat California Burritos"
  */
 
+function eatFood (firstName, lastName, food) {
+	return firstName + ' ' + lastName + " loves to eat " + food + '.' ;
+}
 
+eatFood();
+
+console.log(eatFood("Peter", "Boojangles", "California Burritos"));
 /**
  *  #14
  *  Function - repeater
@@ -269,4 +286,7 @@ console.log(verifyDrinkingAge(canDrinkBeer));
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
+
+
+
 
